@@ -21,11 +21,11 @@ class LineConnect extends LineAPI {
       this._qrCodeLogin().then(async (res) => {
         this.authToken = res.authToken;
         this.certificate = res.certificate;
-        console.info(`[*] Token: ${this.authToken}`);
+        console.info(`[*] โทเคน: ${this.authToken}`);
         console.info(`[*] Certificate: ${res.certificate}`);
         let { mid, displayName } = await this._client.getProfile();config.botmid = mid;
-        console.info(`[*] ID: ${mid}`);
-        console.info(`[*] Name: ${displayName}`);
+        console.info(`[*] มิด: ${mid}`);
+        console.info(`[*] ชื่อ: ${displayName}`);
         await this._tokenLogin(this.authToken, this.certificate);
         await this._chanConn();
         let icH = await this._channel.issueChannelToken("1341209950");config.chanToken = icH.channelAccessToken;
@@ -35,8 +35,8 @@ class LineConnect extends LineAPI {
         console.info("TokenExpire: "+expireCH+"\n");
         console.info(`Botrun70 by Id socool290 team\n`);
         console.info(`Please don't share this project\n`);
-        console.info(`=======BOT BY MIN======\n`);
-        console.info(`=======ID LINE socool290======\n`);
+        console.info(`=======BOT BY PHU======\n`);
+        console.info(`=======ID LINE gg880.======\n`);
         resolve();
       });
     });
